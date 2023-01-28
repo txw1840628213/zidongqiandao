@@ -1,34 +1,35 @@
 import requests
 import json
-
 from datetime import datetime
+#请求
 def ooequ(i):
     url='https://cdn.v2free.net/user/checkin'
-
     headers={
         'accept':'application/json',
         'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
         'content-length': '0',
         'cookie':emails[i]+keys[i]
         }
+    #取消证书检验
     requests.packages.urllib3.disable_warnings()
     res = requests.post(url=url,headers=headers,verify=False)
+    #获取时间
     t=datetime.now()
+    #声明全局变量
     global s1
     s1 = t.strftime("%Y-%m-%d %H:%M:%S") 
+    #转码
     res.encoding = 'utf-8'
     res=res.json()
-    '''    print(res.status_code)
-    res=res.json()
-   
-    print(emails[i]+res['msg'])
-    '''
-    
     return res
+
+#写日志
 def log(n):
     f = open("log.txt", "a")
     f.write(str(s1)+" "+str(emails[i])+" "+str(n)+"\n")
     f.close()
+    
+#提取响应信息
 def zheng(y):
     if y['ret']==1:
         n['msg']=y['msg']
@@ -48,6 +49,7 @@ keys=['key=ab3c13dc4a552e8e5304fc4e6e83fdf199232c57fc714;expire_in=1677340228',
 
 
 for i in range(len(emails)):
+    #时间变量
     s1=None
     n={}
     a=ooequ(i)
