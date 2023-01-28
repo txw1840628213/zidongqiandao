@@ -42,9 +42,9 @@ def zheng(y):
     else: n['错误']='获取错误'
     return n
 
-emails= os.getenv('USER_ID').split("\n\r")
+emails= os.getenv('USER_ID').split("\r\n")
 print(emails)
-keys= os.getenv('KEY').split("\n\r")
+keys= os.getenv('KEY').split("\r\n")
 print(keys)
 
 for i in range(len(emails)):
