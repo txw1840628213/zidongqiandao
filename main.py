@@ -39,13 +39,8 @@ def zheng(y):
     else: n['错误']='获取错误'
     return n
 
-emails=['uid=113435;email=4dung9d3um%40klovenode.com;',
-        'uid=112215;email=826696974%40qq.com;',
-        'uid=58797; email=wxt1.1@qq.com;'
-        ]
-keys=['key=ab3c13dc4a552e8e5304fc4e6e83fdf199232c57fc714;expire_in=1677340228',
-      'key=36119318cfba49902fa0955c2f46738f2792d1cf369bf;expire_in=1677483902',
-      'key=b58d5e4cb907e94b9e44218a32cd3f02482b16bc2e17a;expire_in=1677494148']
+emails= os.getenv('USER_ID', '').split("\n")
+keys= os.getenv('KEY', '').split("\n")
 
 
 for i in range(len(emails)):
