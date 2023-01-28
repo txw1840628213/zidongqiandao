@@ -14,7 +14,6 @@ def ooequ(i):
     #取消证书检验
     requests.packages.urllib3.disable_warnings()
     res = requests.post(url=url,headers=headers,verify=False)
-    res=res.text
     #获取时间
     t=datetime.now()
     #声明全局变量
