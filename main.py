@@ -22,7 +22,7 @@ def ooequ(i):
     s1 = t.strftime("%Y-%m-%d %H:%M:%S") 
     #转码
     res.encoding = 'utf-8'
-    print（res）
+    print(res)
     res=res.json()
     return res
 
