@@ -24,8 +24,7 @@ jobs:
       with:
         python-version: '3.x'
         architecture: 'x64'
-    - run: echo $KEY
-           pip install -r ./requirements.txt && python ./main.py
+    - run: pip install -r ./requirements.txt && python ./main.py
     
     - name: commit
       run: |
