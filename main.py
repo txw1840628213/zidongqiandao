@@ -43,7 +43,7 @@ def zheng(y):
     return n
 
 emails= os.getenv('USER_ID').split("\n")
-print(emsils)
+print(emails)
 keys= os.getenv('KEY').split("\n")
 print(keys)
 
