@@ -1,8 +1,8 @@
 name: v2
 env:
-      USER_ID: ${{ USER_ID }}
-      KEY: ${{ KEY }}
-      URL: ${{ URL }}
+      USER_ID: ${{ env.USER_ID }}
+      KEY: ${{ env.KEY }}
+      URL: ${{ env.URL }}
 on:
   schedule:
   - cron:  '0 0 * * *'
