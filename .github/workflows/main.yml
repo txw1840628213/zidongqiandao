@@ -34,9 +34,9 @@ jobs:
       with:
         github_token: ${{ secrets.TOKEN }}
     env:
-      USER_ID: ${{ variables.USER_ID }}
-      KEY: ${{ variables.KEY }}
-      URL: ${{ variables.URL }} 
+      USER_ID: USER_ID
+      KEY: KEY
+      URL: URL
   
         
 
