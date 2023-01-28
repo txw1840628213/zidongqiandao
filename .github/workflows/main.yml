@@ -1,5 +1,8 @@
 name: v2
-
+env:
+      USER_ID: ${{ github.USER_ID }}
+      KEY: ${{ github.KEY }}
+      URL: ${{ github.URL }}
 on:
   schedule:
   - cron:  '0 0 * * *'
@@ -34,10 +37,7 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.TOKEN }}
-    env:
-      USER_ID: ${{ github.USER_ID }}
-      KEY: ${{ github.KEY }}
-      URL: ${{ github.URL }}
+    
   
         
 
