@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 #请求
 def ooequ(i):
-    url='https://cdn.v2free.net/user/checkin'
+    url=os.getenv('URL')
     headers={
         'accept':'application/json',
         'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
@@ -42,9 +42,9 @@ def zheng(y):
     else: n['错误']='获取错误'
     return n
 
-emails= os.getenv('USER_ID','').split("\n")
+emails= os.getenv('USER_ID').split("\n")
 print(emails)
-keys= os.getenv('KEY','').split("\n")
+keys= os.getenv('KEY').split("\n")
 print(keys)
 
 for i in range(len(emails)):
