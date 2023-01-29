@@ -1,7 +1,7 @@
 import requests
 import json
 import os
-from datetime import datetime
+import datetime
 #请求
 def ooequ(i):
     url='https://cdn.v2free.net/user/checkin'
