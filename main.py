@@ -15,10 +15,10 @@ def ooequ(i):
     requests.packages.urllib3.disable_warnings()
     res = requests.post(url=url,headers=headers,verify=False)
     #获取时间
-    t=datetime.now(pytz.timezone('PRC'))
+    t=datetime.utcnow()
     #声明全局变量
     global s1
-    s1 = t.strftime("%Y-%m-%d %H:%M:%S") 
+    s1 = (t+datetime.timedelta(hours=8)).strftime("%Y-%m-%d %H:%M:%S") 
     #转码
     res.encoding = 'utf-8'
     print(res)
