@@ -4,7 +4,7 @@ import os
 import datetime
 #请求
 def ooequ(i):
-    url='https://cdn.v2free.net/user/checkin'
+    url=os.getenv('URL')
     headers={
         'accept':'application/json',
         'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
