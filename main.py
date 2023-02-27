@@ -28,6 +28,7 @@ def ooequ(i):
         f = open("log.txt", "a")
         f.write(str(s1)+" "+str(emails[i])+" "+'签到失败'+"\n")
         f.close()
+        return 0
     #print(res)
     return res
 
@@ -56,7 +57,10 @@ for i in range(len(emails)):
     #时间变量
     s1=None
     n={}
-    a=ooequ(i)
+    h=ooequ(i)
+    if h==0:
+        continue
+    a=h
     n=zheng(a)
     log(n)
     print('写入',i+1)
