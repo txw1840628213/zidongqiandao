@@ -23,6 +23,7 @@ def ooequ(i):
     res.encoding = 'utf-8'
     print(res)
     res=res.json()
+    print(res)
     return res
 
 #写日志
