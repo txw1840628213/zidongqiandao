@@ -22,7 +22,7 @@ def ooequ(i):
     #转码
     res.encoding = 'utf-8'
     print(res)
-    res=res.json()
+    res=res.text()
     print(res)
     return res
 
