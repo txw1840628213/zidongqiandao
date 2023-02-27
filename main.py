@@ -20,7 +20,7 @@ def ooequ(i):
     global s1
     s1 = (t+datetime.timedelta(hours=8)).strftime("%Y-%m-%d %H:%M:%S") 
     #转码
-    res.encoding = 'utf-8'
+    #res.encoding = 'utf-8'
     print(res)
     res=res.text()
     print(res)
