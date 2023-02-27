@@ -13,17 +13,22 @@ def ooequ(i):
         }
     #取消证书检验
     requests.packages.urllib3.disable_warnings()
-    res = requests.post(url=url,headers=headers,verify=False)
-    #获取时间
-    t=datetime.datetime.utcnow()
-    #声明全局变量
-    global s1
-    s1 = (t+datetime.timedelta(hours=8)).strftime("%Y-%m-%d %H:%M:%S") 
-    #转码
-    #res.encoding = 'utf-8'
-    print(res)
-    res=res.text()
-    print(res)
+    try:
+        res = requests.post(url=url,headers=headers,verify=False)
+        #获取时间
+        t=datetime.datetime.utcnow()
+        #声明全局变量
+        global s1
+        s1 = (t+datetime.timedelta(hours=8)).strftime("%Y-%m-%d %H:%M:%S") 
+        #转码
+        res.encoding = 'utf-8'
+        res=res.json()
+    except:
+        print(email[i]+'账号可能过期')
+        f = open("log.txt", "a")
+        f.write(str(s1)+" "+str(emails[i])+" "+'签到失败'+"\n")
+        f.close()
+    #print(res)
     return res
 
 #写日志
