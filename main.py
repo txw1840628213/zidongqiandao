@@ -24,7 +24,7 @@ def ooequ(i):
         res.encoding = 'utf-8'
         res=res.json()
     except:
-        print(email[i]+'账号可能过期')
+        print(emails[i]+'账号可能过期')
         f = open("log.txt", "a")
         f.write(str(s1)+" "+str(emails[i])+" "+'签到失败'+"\n")
         f.close()
