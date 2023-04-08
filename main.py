@@ -27,7 +27,7 @@ def ooequ(i):
         res=res.json()
     except:
         log_e()
-        sendemail.send_email(i)
+        sendemail.send_email(i,zheng(res))
         return 0
     #print(res)
     return res
@@ -53,8 +53,8 @@ def zheng(y):
     else: n['错误']='获取错误'
     return n
 
-#Email=os.getenv('email').split('\r\n')
-emails= os.getenv('USER_ID').split("\r\n")
+
+
 print(emails)
 keys= os.getenv('KEY').split("\r\n")
 print(keys)
