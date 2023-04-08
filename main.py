@@ -26,9 +26,6 @@ def ooequ(i):
         res.encoding = 'utf-8'
         res=res.json()
     except:
-        log_e()
-        n=str(s1) + "\n" + str(emails[i]) + "\n" + '签到失败' + "\n"
-        sendemail.send_email(i,n)
         return 0
     #print(res)
     return res
@@ -66,6 +63,9 @@ for i in range(len(emails)):
     n={}
     h=ooequ(i)
     if h==0:
+        log_e()
+        text = str(s1) + "\n" + str(emails[i]) + "\n" + '签到失败' + "\n"
+        sendemail.send_email(i,text)
         continue
     a=h
     n=zheng(a)
