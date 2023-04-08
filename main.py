@@ -37,7 +37,7 @@ def log(n):
     f.close()
 
 def log_e():
-    print(emails[i] + '账号可能过期')
+    print('写入',i,emails[i] + '账号可能过期')
     f = open("log.txt", "a")
     f.write(str(s1) + " " + str(emails[i]) + " " + '签到失败' + "\n")
     f.close()
