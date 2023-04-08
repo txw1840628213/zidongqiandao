@@ -25,7 +25,7 @@ def send_email(i):
     msg['Subject'] = '流量签到失败—%s' % today.strftime('%b %d %Y')
     msg['From'] = mail_user
     msg['To'] = to
-    print('邮件发送'+i)
+    print('邮件发送'+str(i))
     # Sends the message
     smtpserver.sendmail(mail_user, [to], msg.as_string())
 
