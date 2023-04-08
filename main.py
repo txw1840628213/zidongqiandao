@@ -2,6 +2,8 @@ import requests
 import json
 import os
 import datetime
+import sendemail
+
 #请求
 def ooequ(i):
     url=os.getenv('URL')
@@ -24,10 +26,8 @@ def ooequ(i):
         res.encoding = 'utf-8'
         res=res.json()
     except:
-        print(emails[i]+'账号可能过期')
-        f = open("log.txt", "a")
-        f.write(str(s1)+" "+str(emails[i])+" "+'签到失败'+"\n")
-        f.close()
+        log_e()
+        send_email()
         return 0
     #print(res)
     return res
@@ -37,7 +37,12 @@ def log(n):
     f = open("log.txt", "a")
     f.write(str(s1)+" "+str(emails[i])+" "+str(n)+"\n")
     f.close()
-    
+
+def log_e():
+    print(emails[i] + '账号可能过期')
+    f = open("log.txt", "a")
+    f.write(str(s1) + " " + str(emails[i]) + " " + '签到失败' + "\n")
+    f.close()
 #提取响应信息
 def zheng(y):
     if y['ret']==1:
@@ -48,6 +53,7 @@ def zheng(y):
     else: n['错误']='获取错误'
     return n
 
+#Email=os.getenv('email').split('\r\n')
 emails= os.getenv('USER_ID').split("\r\n")
 print(emails)
 keys= os.getenv('KEY').split("\r\n")
@@ -63,5 +69,5 @@ for i in range(len(emails)):
     a=h
     n=zheng(a)
     log(n)
-    print('写入',i+1)
+    print('写入',i)
 
