@@ -27,7 +27,7 @@ def ooequ(i):
         res=res.json()
     except:
         log_e()
-        sendemail.send_email()
+        sendemail.send_email(i)
         return 0
     #print(res)
     return res

@@ -4,7 +4,7 @@ from email.mime.text import MIMEText
 import datetime
 import time
 import os
-def send_email():
+def send_email(i):
     # Change to your own account information
     # Account Information
     to            = 'wxt1.1@qq.com'          # Email to send to.
