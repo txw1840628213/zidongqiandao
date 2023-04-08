@@ -18,7 +18,7 @@ def send_email():
     smtpserver.login(mail_user, mail_password)   # Log in to server
     today = datetime.date.today()                # Get current time/date
 
-    ips=n
+    ips='流量签到失败，马上联系我over'
 
     # Creates the text, subject, 'from', and 'to' of the message.
     msg = MIMEText(ips)
