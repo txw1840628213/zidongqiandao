@@ -19,7 +19,7 @@ def send_email(i,n):
     smtpserver.login(mail_user, mail_password)   # Log in to server
     today = datetime.date.today()                # Get current time/date
 
-    ips='流量签到失败，马上联系我over\n'+n+'手动签到:\nhttps://cdn.v2free.net/user/'
+    ips='流量签到失败，马上联系我over\n'+n+'手动签到:\nhttps://cdn.v2free.net/user/\n\n签到日志：\nhttps://jsd.cdn.zzko.cn/gh/txw1840628213/zidongqiandao@main/log.txt'
 
     # Creates the text, subject, 'from', and 'to' of the message.
     msg = MIMEText(ips)
