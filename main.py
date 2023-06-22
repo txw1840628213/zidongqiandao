@@ -53,9 +53,9 @@ def zheng(y):
 
 
 emails= os.getenv('USER_ID').split("\r\n")
-print(emails)
+#print(emails)
 keys= os.getenv('KEY').split("\r\n")
-print(keys)
+#print(keys)
 
 for i in range(len(emails)):
     #时间变量
