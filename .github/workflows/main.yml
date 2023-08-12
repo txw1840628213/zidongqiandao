@@ -1,14 +1,8 @@
-name: v2
-env:
-      USER_ID: ${{ vars.USER_ID }}
-      KEY: ${{ vars.KEY }}
-      URL: ${{ vars.URL }}
-      MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
-      EMAILS: ${{ vars.EMAILS }}
-      MAIL_USER: ${{ vars.MAIL_USER }}
+name: del
+    
 on:
-  schedule:
-  - cron:  '0 20 * * *'
+
+
   workflow_dispatch:
 
 jobs:
@@ -34,15 +28,10 @@ jobs:
       run: |
         git config --global user.email 1840628213@qq.com
         git config --global user.name txw
-        git add log.txt
-        git add ./list
-        git commit -m "log" -a
+        git rm -r --cached ./list
+        git commit -m "del" -a
         
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.TOKEN }}
-    
-  
-        
-
