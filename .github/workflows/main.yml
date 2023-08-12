@@ -35,6 +35,7 @@ jobs:
         git config --global user.email 1840628213@qq.com
         git config --global user.name txw
         git add log.txt
+        git add ./list
         git commit -m "log" -a
         
     - name: Push changes
