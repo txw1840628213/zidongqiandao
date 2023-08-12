@@ -1,1 +1,122 @@
-{"date": "2023-08-12", "channel_name": "CCTV8", "url": "ctv.112114.xyz", "epg_data": [{"start": "00:06", "desc": "", "end": "00:52", "title": "夺金第17集"}, {"start": "00:52", "desc": "", "end": "00:57", "title": "星推荐-2023年8月-11"}, {"start": "00:57", "desc": "", "end": "01:43", "title": "夺金第18集"}, {"start": "01:43", "desc": "", "end": "02:29", "title": "夺金第19集"}, {"start": "02:29", "desc": "", "end": "03:15", "title": "夺金第20集"}, {"start": "03:15", "desc": "", "end": "04:01", "title": "夺金第21集"}, {"start": "04:01", "desc": "", "end": "04:20", "title": "插花-2022-3"}, {"start": "04:20", "desc": "", "end": "04:27", "title": "星推荐-2023年8月-11"}, {"start": "04:27", "desc": "", "end": "05:13", "title": "我最爱的家人第36集"}, {"start": "05:13", "desc": "", "end": "05:59", "title": "我最爱的家人第37集"}, {"start": "05:59", "desc": "", "end": "06:49", "title": "我最爱的家人第38集"}, {"start": "06:49", "desc": "", "end": "07:35", "title": "我最爱的家人第39集"}, {"start": "07:35", "desc": "", "end": "07:44", "title": "星推荐-2023年8月-11"}, {"start": "07:44", "desc": "", "end": "08:39", "title": "跨过鸭绿江第16集"}, {"start": "08:39", "desc": "", "end": "09:30", "title": "跨过鸭绿江第17集"}, {"start": "09:30", "desc": "", "end": "09:41", "title": "星推荐-2023年8月-11"}, {"start": "09:41", "desc": "", "end": "10:38", "title": "跨过鸭绿江第18集"}, {"start": "10:38", "desc": "", "end": "11:35", "title": "跨过鸭绿江第19集"}, {"start": "11:35", "desc": "", "end": "12:21", "title": "跨过鸭绿江第20集"}, {"start": "12:21", "desc": "", "end": "12:36", "title": "星推荐-2023年8月-11"}, {"start": "12:36", "desc": "", "end": "13:33", "title": "狂飙第1集"}, {"start": "13:33", "desc": "", "end": "14:28", "title": "狂飙第2集"}, {"start": "14:28", "desc": "", "end": "15:24", "title": "狂飙第3集"}, {"start": "15:24", "desc": "", "end": "16:10", "title": "狂飙第4集"}, {"start": "16:10", "desc": "", "end": "16:23", "title": "星推荐-2023年8月-11"}, {"start": "16:23", "desc": "", "end": "16:28", "title": "插花-2015-3"}, {"start": "16:28", "desc": "", "end": "17:30", "title": "南洋女儿情第29集"}, {"start": "17:30", "desc": "", "end": "18:24", "title": "南洋女儿情第30集"}, {"start": "18:24", "desc": "", "end": "18:30", "title": "星推荐-2023年8月-11"}, {"start": "18:30", "desc": "", "end": "19:19", "title": "南洋女儿情第31集"}, {"start": "19:19", "desc": "", "end": "19:26", "title": "星推荐-2023年8月-12"}, {"start": "19:26", "desc": "", "end": "19:30", "title": "本集提要- 《潜行者》第33集"}, {"start": "19:30", "desc": "", "end": "20:25", "title": "潜行者第33集"}, {"start": "20:25", "desc": "", "end": "20:30", "title": "本集提要- 《潜行者》第34集"}, {"start": "20:30", "desc": "", "end": "21:24", "title": "潜行者第34集"}, {"start": "21:24", "desc": "", "end": "21:29", "title": "本集提要- 《莲花楼》第12集"}, {"start": "21:29", "desc": "", "end": "22:19", "title": "莲花楼第12集"}, {"start": "22:19", "desc": "", "end": "22:22", "title": "本集提要- 《莲花楼》第13集"}, {"start": "22:22", "desc": "", "end": "23:11", "title": "莲花楼第13集"}, {"start": "23:11", "desc": "", "end": "23:57", "title": "夺金第22集"}, {"start": "23:57", "desc": "", "end": "23:59", "title": "星推荐-2023年8月-12"}]}
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>epg.112114.eu.org | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              <span class="inline-block">Bad gateway</span>
+              <span class="code-label">Error code 502</span>
+            </h1>
+            <div>
+               Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=epg.112114.eu.org" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2023-08-12 23:10:25 UTC</div>
+        </header>
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Browser
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=epg.112114.eu.org" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Newark</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=epg.112114.eu.org" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+    </a>
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">epg.112114.eu.org</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Host
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">7f5c643a6ca2c3eb</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">40.75.123.254</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=epg.112114.eu.org" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
