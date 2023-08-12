@@ -29,6 +29,7 @@ jobs:
         architecture: 'x64'
     - run: pip install -r ./requirements.txt && python ./main.py
     - run: pip install -r ./requirements.txt && python ./git/main.py
+    - run：tree ./
     
     - name: commit
       run: |
