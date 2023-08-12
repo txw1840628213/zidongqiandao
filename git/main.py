@@ -15,13 +15,12 @@ def read():
 #根据列表网页请求，错误进行保留
 def re(name,t=0):
     for i in name:
-        url = "http://epg.112114.xyz/?ch="+i+"&date="+data(t)
+        url = "http://epg.112114.eu.org/?ch="+i+"&date="+data(t)
         sleep(1)
         requests.packages.urllib3.disable_warnings()
         # 闪出警告
         res = requests.get(url=url, verify=False).text
         file(i,res,t)
-    print(res)
     return res
 #命名，写入文件
 def file(i,res,t=0):
@@ -52,11 +51,3 @@ if __name__ == '__main__':
     #data()
     makedir(tvname)
     re(tvname)
-    re(tvname,1)
-    re(tvname,-1)
-    re(tvname,-2)
-    re(tvname,-3)
-    re(tvname,-4)
-    re(tvname,-5)
-    re(tvname,-6)
-    re(tvname,-7)
