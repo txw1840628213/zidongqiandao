@@ -16,7 +16,7 @@ def read():
 def re(name,t=0):
     for i in name:
         url = "http://epg.112114.eu.org/?ch="+i+"&date="+data(t)
-        sleep(1)
+        sleep(0.5)
         requests.packages.urllib3.disable_warnings()
         # 闪出警告
         res = requests.get(url=url, verify=False).text
