@@ -7,7 +7,7 @@ from time import sleep
 
 #读取文件，提取电视台做列表
 def read():
-    with open("./tvname.txt", "r", encoding='utf-8') as f:  #打开文本
+    with open("./git/tvname.txt", "r", encoding='utf-8') as f:  #打开文本
         data = f.read()   #读取文本
         tvname=data.split(",")
         #p.pprint(tvname)
