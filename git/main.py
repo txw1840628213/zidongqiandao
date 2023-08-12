@@ -2,7 +2,7 @@ import requests
 import os
 import datetime
 from time import sleep
-import pprint as p
+#import pprint as p
 
 
 #读取文件，提取电视台做列表
