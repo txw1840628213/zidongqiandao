@@ -43,7 +43,7 @@ def makedir(tvname):
 def data(t=0):
 
     #datetime.datetime.now() 现在时间 ，datetime.timedelta(days=) 加（减负）天数 ， .strftime("%Y-%m-%d") 格式
-    time=(datetime.datetime.now()+datetime.timedelta(days=t)).strftime("%Y-%m-%d")
+    time=(datetime.datetime.utcnow()+datetime.timedelta(hours=8)+datetime.timedelta(days=t)).strftime("%Y-%m-%d")
     return time
 if __name__ == '__main__':
     tvname=read()
