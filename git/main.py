@@ -15,7 +15,7 @@ def read():
 #根据列表网页请求，错误进行保留
 def re(name,t=0):
     for i in name:
-        url = "http://epg.112114.eu.org/?ch="+i+"&date="+data(t)
+        url = "http://epg.112114.xyz/?ch="+i+"&date="+data(t)
         sleep(0.5)
         requests.packages.urllib3.disable_warnings()
         # 闪出警告
