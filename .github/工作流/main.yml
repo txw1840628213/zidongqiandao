@@ -1,7 +1,8 @@
-name: v2
+name: del
+    
 on:
-  schedule:
-  - cron:  '0 0 * * *'
+
+
   workflow_dispatch:
 
 jobs:
@@ -13,7 +14,7 @@ jobs:
     - name: checkout
       uses: actions/checkout@v3
       with:
-        ref: master
+        ref: main
 
     - name: setup
       uses: actions/setup-python@v2
@@ -21,12 +22,16 @@ jobs:
         python-version: '3.x'
         architecture: 'x64'
     - run: pip install -r ./requirements.txt && python ./main.py
-
-    env:
-      APP_ID: ${{ secrets.APP_ID }}
-      APP_SECRET: ${{ secrets.APP_SECRET }}
-      TEMPLATE_ID: ${{ secrets.TEMPLATE_ID }}
-      USER_ID: ${{ secrets.USER_ID }}
-      START_DATE: ${{ secrets.START_DATE }}
-      BIRTHDAY: ${{ secrets.BIRTHDAY }}
-      CITY: ${{ secrets.CITY }}
+    - run: pip install -r ./requirements.txt && python ./git/main.py
+    
+    - name: commit
+      run: |
+        git config --global user.email 1840628213@qq.com
+        git config --global user.name txw
+        git rm -r --cached ./list
+        git commit -m "del" -a
+        
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.TOKEN }}
