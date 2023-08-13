@@ -2,6 +2,9 @@ import requests
 import os
 import datetime
 from time import sleep
+import sys 
+sys.path.append("..") 
+import sendemail
 #import pprint as p
 
 
@@ -14,13 +17,25 @@ def read():
         return tvname
 #根据列表网页请求，错误进行保留
 def re(name,t=0):
+    shibai=[]
     for i in name:
         url = "http://epg.112114.xyz/?ch="+i+"&date="+data(t)
         sleep(0.5)
         requests.packages.urllib3.disable_warnings()
         # 闪出警告
-        res = requests.get(url=url, verify=False).text
-        file(i,res,t)
+        for c in range(10):
+            res = requests.get(url=url, verify=False).text
+            if res.status_code == 200:
+                file(i,res,t)
+                break
+            elif c == 9:
+                shibai.append(i)
+    if len(shibai) != 0:
+        sendemail.send_email(0,shibai,'节目表失败')
+        with open('./log.txt, 'a',encoding='utf-8') as f:
+            f.write(data(t)+shibai+'\n')
+            print(data(t)+"失败"+shibai)
+                
     return res
 #命名，写入文件
 def file(i,res,t=0):
