@@ -19,11 +19,13 @@ def read():
 def re(name,t=0):
     shibai=[]
     for i in name:
-        url = "http://epg.112114.xyz/?ch="+i+"&date="+data(t)
-        sleep(0.5)
-        requests.packages.urllib3.disable_warnings()
-        # 闪出警告
         for c in range(10):
+            print(i+'第'+c+'次')
+            url = "http://epg.112114.xyz/?ch="+i+"&date="+data(t)
+            sleep(0.5)
+            requests.packages.urllib3.disable_warnings()
+            # 闪出警告
+        
             res = requests.get(url=url, verify=False).text
             if res.status_code == 200:
                 file(i,res,t)
@@ -61,7 +63,7 @@ def data(t=0):
     time=(datetime.datetime.utcnow()+datetime.timedelta(hours=8)+datetime.timedelta(days=t)).strftime("%Y-%m-%d")
     return time
 if __name__ == '__main__':
-    tvname=read()
+    tvname=['CCTV1','CCTV7']#read()
     #sum=len(tvname)
     #data()
     makedir(tvname)
