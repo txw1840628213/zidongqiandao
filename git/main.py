@@ -61,7 +61,7 @@ def data(t=0):
     time=(datetime.datetime.utcnow()+datetime.timedelta(hours=8)+datetime.timedelta(days=t)).strftime("%Y-%m-%d")
     return time
 if __name__ == '__main__':
-    tvname=['CCTV1','CCTV7']#read()
+    tvname=read()
     #sum=len(tvname)
     #data()
     makedir(tvname)
