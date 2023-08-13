@@ -18,7 +18,7 @@ def re(name,t=0):
     shibai=[]
     for i in name:
         for c in range(10):
-            print(i+'第'+c+'次')
+            print(i+'第',c,'次')
             url = "http://epg.112114.xyz/?ch="+i+"&date="+data(t)
             sleep(0.5)
             requests.packages.urllib3.disable_warnings()
