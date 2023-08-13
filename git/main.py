@@ -2,7 +2,8 @@ import requests
 import os
 import datetime
 from time import sleep
-
+import sys 
+sys.path.append("..") 
 import sendemail
 #import pprint as p
 
