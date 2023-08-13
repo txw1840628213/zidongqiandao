@@ -24,9 +24,9 @@ def re(name,t=0):
             requests.packages.urllib3.disable_warnings()
             # 闪出警告
         
-            res = requests.get(url=url, verify=False).text
+            res = requests.get(url=url, verify=False)
             if res.status_code == 200:
-                file(i,res,t)
+                file(i,res.text,t)
                 break
             elif c == 9:
                 shibai.append(i)
