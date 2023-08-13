@@ -31,7 +31,7 @@ def re(name,t=0):
             elif c == 9:
                 shibai.append(i)
     if len(shibai) != 0:
-        sendemail.send_email(0,shibai,'节目表失败')
+        sendemail.send_email(0,str(shibai),'节目表失败')
         with open('./log.txt', 'a',encoding='utf-8') as f:
             f.write(data(t)+shibai+'\n')
             print(data(t)+"失败"+shibai)
