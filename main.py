@@ -65,7 +65,7 @@ for i in range(len(emails)):
     if h==0:
         log_e()
         text = str(s1) + "\n" + str(emails[i]) + "\n" + '签到失败' + '手动签到:\nhttps://cdn.v2free.net/user/\n\n签到日志：\nhttps://jsd.cdn.zzko.cn/gh/txw1840628213/zidongqiandao@main/log.txt'+"\n"
-        sendemail.send_email(i,text,'流量签到')
+        sendemail.send_email(i,text,'流量签到失败')
         continue
     a=h
     n=zheng(a)
