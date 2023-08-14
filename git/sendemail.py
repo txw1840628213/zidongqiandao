@@ -5,6 +5,7 @@ import datetime
 import time
 import os
 def send_email(i,ips,subject):
+    ips=str(ips)
     Email = os.getenv('EMAILS').split('\r\n')
     # Change to your own account information
     # Account Information
