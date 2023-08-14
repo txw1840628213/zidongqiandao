@@ -84,4 +84,4 @@ if __name__ == '__main__':
     #data()
     makedir(tvname)
     for i in range(0,-2,-1):
-        re(tvname)
+        re(tvname,i)
