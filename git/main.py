@@ -83,5 +83,5 @@ if __name__ == '__main__':
     #sum=len(tvname)
     #data()
     makedir(tvname)
-    for i in range(0,-2,-1)
-    re(tvname)
+    for i in range(0,-2,-1):
+        re(tvname)
