@@ -10,6 +10,7 @@ import sendemail
 def read():
     with open("./git/tvname.txt", "r", encoding='utf-8') as f:  #打开文本
         data = f.read()   #读取文本
+        data = data[-2]
         tvname=data.split(",")
         #p.pprint(tvname)
         return tvname
