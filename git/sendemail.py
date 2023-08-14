@@ -32,3 +32,4 @@ def send_email(i,ips,subject):
 
     # Closes the smtp server.
     smtpserver.quit()
+    print('邮件发送成功')
