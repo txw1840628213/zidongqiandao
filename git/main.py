@@ -10,7 +10,7 @@ import sendemail
 def read():
     with open("./git/tvname.txt", "r", encoding='utf-8') as f:  #打开文本
         data = f.read()   #读取文本
-        data = data[-1:-2]
+        data = data[:-4]
         tvname=data.split(",")
         #p.pprint(tvname)
         return tvname
@@ -21,11 +21,13 @@ def re(name,t=0):
         for c in range(10):
             print(i+'第',c,'次')
             url = "http://epg.112114.eu.org/?ch="+i+"&date="+data(t)
-            sleep(1)
+            
             requests.packages.urllib3.disable_warnings()
             # 闪出警告
         
             res = requests.get(url=url, verify=False)
+            sleep(1)
+            print(res.status_code)
             if res.status_code == 200:
                 file(i,res.text,t)
                 break
