@@ -40,7 +40,7 @@ def re(name,t=0):
             requests.packages.urllib3.disable_warnings()
             # 闪出警告
         
-            res = requests.get(url=url,headers=headers verify=False)
+            res = requests.get(url=url,headers=headers, verify=False)
             sleep(1)
             print(res.status_code)
             if res.status_code == 200 || res.status_code == 201:
