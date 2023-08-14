@@ -43,7 +43,7 @@ def re(name,t=0):
             res = requests.get(url=url,headers=headers, verify=False)
             sleep(1)
             print(res.status_code)
-            if res.status_code == 200 || res.status_code == 201:
+            if res.status_code == 200 or res.status_code == 201:
                 file(i,res.text,t)
                 break
             elif c == 9:
