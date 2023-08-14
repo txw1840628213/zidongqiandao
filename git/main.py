@@ -41,7 +41,7 @@ def re(name,t=0):
             # 闪出警告
         
             res = requests.get(url=url,headers=headers, verify=False)
-            sleep(1)
+            sleep(0.5)
             print(res.status_code)
             if res.status_code == 200 or res.status_code == 201:
                 file(i,res.text,t)
