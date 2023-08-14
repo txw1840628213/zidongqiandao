@@ -10,7 +10,7 @@ import sendemail
 def read():
     with open("./git/tvname.txt", "r", encoding='utf-8') as f:  #打开文本
         data = f.read()   #读取文本
-        data = data[-2]
+        data = data[-1:-2]
         tvname=data.split(",")
         #p.pprint(tvname)
         return tvname
@@ -34,7 +34,7 @@ def re(name,t=0):
     if len(shibai) != 0:
         sendemail.send_email(0,str(shibai),'节目表失败')
         with open('./log.txt', 'a',encoding='utf-8') as f:
-            f.write(data(t),shibai,'\n')
+            f.write(data(t)+str(shibai)+'\n')
             print(data(t)+"失败"+shibai)
                 
     return res
