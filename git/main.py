@@ -18,7 +18,7 @@ def read():
 def re(name,t=0):
     shibai=[]
     for i in name:
-        for c in range(10):
+        for c in range(15):
             print(i+'第',c,'次')
             url = "http://epg.112114.eu.org/?ch="+i+"&date="+data(t)
             
@@ -36,7 +36,7 @@ def re(name,t=0):
     if len(shibai) != 0:
         sendemail.send_email(0,str(shibai),'节目表失败')
         with open('./log.txt', 'a',encoding='utf-8') as f:
-            f.write(data(t)+shibai+'\n')
+            f.write(data(t)+str(shibai)+'\n')
             print(data(t),"失败",shibai)
                 
     return res
