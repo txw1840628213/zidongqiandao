@@ -139,3 +139,8 @@
 2023-09-07 04:06:49 uid=58797; email=wxt1.1@qq.com; 签到失败
 2023-09-07 04:06:52 uid=76002; email=3103347348@qq.com; 签到失败
 2023-09-07 04:06:56 uid=249558; email=pxy@happy2023year.com;  签到失败
+2023-09-08 04:06:29 uid=174996; email=qfgmousnhx@skygazerhub.com;  签到失败
+2023-09-08 04:06:34 uid=112215; email=826696974@qq.com; 签到失败
+2023-09-08 04:06:38 uid=58797; email=wxt1.1@qq.com; 签到失败
+2023-09-08 04:06:42 uid=76002; email=3103347348@qq.com; 签到失败
+2023-09-08 04:06:47 uid=249558; email=pxy@happy2023year.com;  签到失败
