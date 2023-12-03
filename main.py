@@ -7,11 +7,22 @@ import sendemail
 #请求
 def ooequ(i):
     url=os.getenv('URL')
-    headers={
-        'accept':'application/json',
-        'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
-        'content-length': '0',
-        'cookie':emails[i]+keys[i]
+    headers = {
+    'authority': 'cdn.v2free.net',
+    'accept': 'application/json, text/javascript, */*; q=0.01',
+    'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+    'content-length': '0',
+    'cookie':emails[i]+keys[i]
+    'origin': 'https://cdn.v2free.net',
+    'referer': 'https://cdn.v2free.net/user',
+    'sec-ch-ua': '"Microsoft Edge";v="119", "Chromium";v="119", "Not?A_Brand";v="24"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Windows"',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'same-origin',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0',
+    'x-requested-with': 'XMLHttpRequest',
         }
     #取消证书检验
     requests.packages.urllib3.disable_warnings()
