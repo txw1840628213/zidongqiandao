@@ -12,7 +12,7 @@ def ooequ(i):
     'accept': 'application/json, text/javascript, */*; q=0.01',
     'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
     'content-length': '0',
-    'cookie':emails[i]+keys[i]
+    'cookie':emails[i]+keys[i],
     'origin': 'https://cdn.v2free.net',
     'referer': 'https://cdn.v2free.net/user',
     'sec-ch-ua': '"Microsoft Edge";v="119", "Chromium";v="119", "Not?A_Brand";v="24"',
